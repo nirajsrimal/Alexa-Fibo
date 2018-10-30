@@ -30,7 +30,7 @@ def start_skill():
     message = 'Hey.. Ask me whether a number is in fibonacci sequence or not?'
     return question(message)
 
-@ask.intent("NumberIntent")
+@ask.intent("NumberIntent",convert = {"num" : int})
 def number_intent(num):
 	ans =  isFibonacci(num)
 	if ans:
