@@ -34,9 +34,10 @@ def start_skill():
 def number_intent(num):
 	ans =  isFibonacci(num)
 	if ans:
-		return statement("Yes")
+		return statement("Yes, It is a Fibonacci Number")
 	else:
-		return statement("No")
+		message = "No," + str(num) + " is not a Fibonacci Number" 
+		return statement(message)
 
 @ask.intent("NoIntent")
 def no_Intent():
