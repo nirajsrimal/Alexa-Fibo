@@ -56,7 +56,7 @@ def stop_Intent():
 
 @ask.intent("AMAZON.HelpIntent")
 def help_Intent():
-    message = 'Say a number.'
+    message = 'Please tell a number to check whether it is in the fibonacci series or not?'
     return question(message)
 
 if __name__ == '__main__':
